@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:850px;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.titulo h1{
+    margin-bottom:10px;
+}
+
+.titulo p{
+    color:#c0c0c0;
+}
+
+.senha-box{
+    display:flex;
+    margin-bottom:20px;
+}
+
+.senha-box input{
+
+    flex:1;
+
+    background:#1f1f1f;
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    font-size:24px;
+}
+
+.senha-box button{
+
+    width:70px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#333;
+    color:white;
+
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.senha-box button:hover{
+    background:#555;
+}
+
+.config{
+
+    background:#1a1a1a;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    border:1px solid #333;
+}
+
+.config h2{
+    margin-bottom:20px;
+}
+
+.conteudo{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.bloco{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.controle{
+    display:flex;
+    align-items:center;
+}
+
+.controle button{
+
+    width:40px;
+    height:40px;
+
+    border:none;
+
+    background:#333;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+.controle span{
+
+    width:60px;
+
+    text-align:center;
+
+    background:#222;
+
+    line-height:40px;
+}
+
+input[type="checkbox"]{
+    margin-right:8px;
+}
+
+.gerar{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#444;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.gerar:hover{
+    background:#666;
+}
+
+.barra{
+
+    width:100%;
+
+    height:20px;
+
+    background:#333;
+
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+#nivel{
+
+    width:33%;
+    height:100%;
+
+    background:red;
+
+    transition:.4s;
+}
+
+#textoForca{
+    font-weight:bold;
+}
+
+footer{
+
+    margin-top:40px;
+
+    color:#aaa;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .senha-box input{
+        font-size:18px;
+    }
+
+}

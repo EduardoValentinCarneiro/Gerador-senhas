@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gerador de Senhas</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="titulo">
+        <h1>🔒 Gerador de Senhas</h1>
+        <p>Gere instantaneamente uma senha aleatória e segura</p>
+    </div>
+
+    <div class="senha-box">
+
+        <input
+            type="text"
+            id="senha"
+            readonly
+        >
+
+        <button onclick="copiarSenha()">
+            📋
+        </button>
+
+    </div>
+
+    <div class="config">
+
+        <h2>Personalize sua senha</h2>
+
+        <div class="conteudo">
+
+            <div class="bloco">
+
+                <label>Número de caracteres</label>
+
+                <div class="controle">
+
+                    <button onclick="alterarTamanho(-1)">-</button>
+
+                    <span id="tamanho">12</span>
+
+                    <button onclick="alterarTamanho(1)">+</button>
+
+                </div>
+
+            </div>
+
+            <div class="bloco">
+
+                <label>
+                    <input type="checkbox" id="maiusculas" checked>
+                    Letras maiúsculas
+                </label>
+
+                <label>
+                    <input type="checkbox" id="minusculas" checked>
+                    Letras minúsculas
+                </label>
+
+                <label>
+                    <input type="checkbox" id="numeros" checked>
+                    Números
+                </label>
+
+                <label>
+                    <input type="checkbox" id="simbolos">
+                    Símbolos
+                </label>
+
+            </div>
+
+            <div class="bloco">
+
+                <h3>Força da senha</h3>
+
+                <div class="barra">
+                    <div id="nivel"></div>
+                </div>
+
+                <span id="textoForca">Fraca</span>
+
+            </div>
+
+        </div>
+
+        <button
+            class="gerar"
+            onclick="gerarSenha()"
+        >
+            Gerar Nova Senha
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+    Feito por Eduardo Valentin Carneiro
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
